@@ -1,5 +1,5 @@
 // Service worker: menyimpan aplikasi supaya tetap bisa dibuka tanpa internet
-const CACHE = 'my-journal-v3';
+const CACHE = 'my-journal-v7';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener('activate', e => {
